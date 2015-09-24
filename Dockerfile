@@ -25,3 +25,9 @@ USER yaourt
 RUN cd /tmp/yaourt ; yaourt --getpkgbuild aur/texlive-gantt ; cd texlive-gantt ; makepkg ; ls -la
 USER root
 RUN pacman -U --noconfirm /tmp/yaourt/texlive-gantt/texlive-gantt*.pkg.tar.xz
+
+# Default command at container start
+RUN mkdir -p /mnt/aux/includes
+ADD tex-utils.sh /usr/bin/tex
+
+WORKDIR "/mnt"
