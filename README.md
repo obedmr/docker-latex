@@ -16,7 +16,7 @@ How to use it?
 	cd /path/to/your/latex/project
 	# Create the output directory
 	mkdir aux/
-	docker run -v `pwd`:/mnt obedmr/latex tex <tex_command> <main.tex>
+	docker run --rm -v `pwd`:/mnt obedmr/latex tex <tex_command> <main.tex>
 ```
 
 3. That's all, you will have your compiled content inside the output dir ``aux/``
