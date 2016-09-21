@@ -1,7 +1,6 @@
-obedmr/latex
-=======================
+docker-latex
+============
 A Docker container for compiling LaTeX Projects
------------------------
 
 How to use it?
 --------------
