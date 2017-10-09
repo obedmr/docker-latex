@@ -2,7 +2,7 @@ FROM obedmr/archlinux
 MAINTAINER obed.n.munoz@gmail.com
 
 # Install TexLive
-RUN pacman -Sy --noconfirm texlive-most
+RUN pacman -Sy --noconfirm texlive-most biber
 RUN pacman -Sc --noconfirm
 
 # Default command at container start
