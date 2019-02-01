@@ -1,9 +1,8 @@
-FROM obedmr/archlinux
+FROM alpine
 MAINTAINER obed.n.munoz@gmail.com
 
 # Install TexLive
-RUN pacman -Sy --noconfirm texlive-most biber
-RUN pacman -Sc --noconfirm
+RUN apk add --update --progress texlive-full
 
 # Default command at container start
 RUN mkdir -p /mnt/aux/includes
