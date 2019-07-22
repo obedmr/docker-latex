@@ -19,5 +19,5 @@ else
     args=$*
     # LaTeX to PDF compilation
     cd /mnt
-    $command -output-directory=/mnt/aux $args
+    $command -interaction=nonstopmode -output-directory=/mnt/aux $args
 fi
